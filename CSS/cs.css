@@ -102,12 +102,13 @@ header {
   font-weight: 600;
 }
 
-.nav-item {
+/* .nav-item {
   border-bottom: 2px solid rgba(255, 255, 255, .3);
   align-items: left;
-}
+} */
 
 .nav-link {
+  text-decoration: none;
   display: block;
   color: #fff;
   text-transform: uppercase;
@@ -116,9 +117,9 @@ header {
   margin-right: -2px;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   color: #3bcc75;
-}
+} */
 
 
 .slider {
@@ -173,6 +174,7 @@ header {
     }
 
     .nav-list {
+    
         margin: 20px;
         width: initial;
         height: initial;
