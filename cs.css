@@ -502,8 +502,8 @@ display: none;
 
 /* Retraso de la animación */
 #logo {
-animation: fadeOut 2s ease-in-out;
-animation-delay: 2s;
+animation: fadeOut 1s ease-in-out;
+animation-delay: 1s;
 }
 
 /* Mostrar el menú y el contenido después de que termine la animación */
