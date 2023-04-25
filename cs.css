@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
 
 
-/*Globales*/
+ /* Globales */
 *,
 *::before,
 *::after {
@@ -15,15 +15,15 @@ html {
     font-size: 10px;
     color: #000;
     scroll-behavior: smooth;
-}
-/*Header*/
+} 
+/*navegación*/
 header {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+  background: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
 }
 .nav {
   height: 7.2rem;
@@ -117,10 +117,7 @@ header {
   margin-right: -2px;
 }
 
-/* .nav-link:hover {
-  color: #3bcc75;
-} */
-
+/* carrusel de video */
 
 .slider {
   width: 100%;
@@ -154,7 +151,7 @@ header {
     color:beige;
   }
 
-  /* inte*/
+  /*carrusel de imagenes*/
 
   .sliders {
     position: relative;
@@ -189,6 +186,9 @@ header {
     height: 100%;
     object-fit: cover;
   }
+
+
+  
   .box {
     position: relative;
     top: -550px;
@@ -203,7 +203,7 @@ header {
   .box h1{
     font-size: 29px;
   }
-  
+  /* contenedor de images */
   .image-container {
     display: flex;
     justify-content: center;
@@ -267,7 +267,7 @@ header {
     left: -20%;
   }
 
-  
+  /* pie de pagina */
 footer {
   padding: 7.9rem 0;
   background-color: #121212;
@@ -306,13 +306,13 @@ footer {
   margin-bottom: 5.4rem;
   display: flex;
   justify-content: center;
-  
 }
 
 .social-icons i {
   font-size: 2rem;
   color: #eaf1ed;
   padding: 0px 2rem;
+
   
 }
 
@@ -321,37 +321,14 @@ footer {
   color: red;
 }
 
-.news-form {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
 
-}
-
-.news-input {
-  width: 100%;
-  max-width: 25rem;
-  padding: 1rem;
-  border-radius: .4rem;
-}
-.news-btn {
-  background: transparent;
-  border: none;
-  color: #252525;
-  cursor: pointer;
-  font-size: 1.6rem;
-  padding: 1px .6rem;
-  position: absolute;
-  top: 30%;
-  margin-left: 20.5rem;
-}
 
 
 .clase-1, .clase-2, .clase-3, .clase-4, .clase-5 {
   display: inline-block;
   width: calc(10% - 10px);
   margin: 20 30px;
+  vertical-align: top;
   
 }
 
@@ -464,6 +441,19 @@ h2 {
     
 }
 
+.fa-tiktok{
+  list-style: none;
+  margin-bottom: 5.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-tiktok{
+  font-size: 2rem;
+  color: #eaf1ed;
+  padding: 0px 2rem;
+}
+
 
 .footer {
   background-color: #333;
@@ -530,4 +520,27 @@ display: block;
   height: 100px;
 }
 
+/* modal */
 
+#modal{
+  width: 50%;
+  margin: 0 auto 0;
+  padding: 7em 8vw;
+  background: white;
+  margin-left: 50%;
+  
+  height: 100%;
+}
+
+ #modal button{
+  background-color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  left: 50%;
+}
+h4{
+  position: relative;
+  top: 60px;
+}

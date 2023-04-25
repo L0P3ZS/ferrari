@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="cs.css">
     <link rel="shortcut icon" href="IMG/logo negro.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <title>Página Oficial de Ferrari </title>
 </head>
 <body>
 
@@ -18,11 +17,11 @@
   <header>
     <div class="container">
       <nav class="nav">
-        <div class="menu-toggle">
+        <!-- <div class="menu-toggle">
           <i class="fas fa-bars"></i>
           <i class="fas fa-times"></i>
         </div>
-  
+   -->
         <ul class="nav-list">
           <li class="nav-item">
             <a href="#" class="nav-link active">AUTO</a>
@@ -31,7 +30,7 @@
             <a href="#" class="nav-link ">RACING</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link ">COLECCIONES</a>
+            <a href="https://store.ferrari.com/es-es/?from=SH&_gl=1*w1f80b*_ga*MTQyNjg5MjgwNi4xNjgyNDQ4MDUw*_ga_JM1HT9B412*MTY4MjQ1MDEwMy4yLjEuMTY4MjQ1MzgzOC4wLjAuMA.." class="nav-link ">COLECCIONES</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link ">UNIVERSE</a>
@@ -49,7 +48,7 @@
   </header>
 
  
-  
+  <!--carrusel de videos-->
   
   <div class="slider">
     <div class="slide">
@@ -80,7 +79,7 @@
     </div>
   </div>
 
-
+<!--carrusel de imagenes-->
   <div class="sliders">
     <div class="slide1">
       <img src="imgs/car2.avif" alt="Imagen 1">
@@ -106,7 +105,7 @@
     </div>
   </div>
 
-  
+  <!--contenedor de 6 imagenes-->
   <div class="image-container">
     <div class="image-column ">
         <div class="image-wrapper">
@@ -157,10 +156,17 @@
         </div>
     </div>
 </div>
-<div class="ns">
-  <h1>SUSCRIBETE AL BOLETIN DE FERRARI  </h1>
-</div>
 
+<button  id="btn-abrir-modal" type="button">ok</button>
+<!--pie de pagina-->
+
+<dialog  id="modal">
+  <h3>Tus gus</h3>
+ 
+  <h4 id="selected-fruits"></h4>
+  <button  id="bt-cerrar-modal">ok</button>
+
+</dialog>
 
 <footer>
   <div class="container">
@@ -175,10 +181,10 @@
                   <p>Officine Classiche</p>
                   <p>Cursos de conducción</p>
                   <p>Vehículos de ocasión certificados</p>
-                  <p>Buscar concesionario</p><br>
-                  <p>MyFerrari App</p><br>
-                  <p>Recall information</p><br>
-                  <p>TechInfo</p><br>
+                  <p>Buscar concesionario</p>
+                  <p>MyFerrari App</p>
+                  <p>Recall information</p>
+                  <p>TechInfo</p>
                   
               </div>
               
@@ -198,50 +204,43 @@
                 <p>Scuderia Ferrari Club Locator</p>
               </div>
               <div class="clase-3">
-                <p>COLECCIONES</p><br>
-                <p>Hombre</p><br>
-                <p>Mujer</p><br>
-                <p>Niño</p><br>
-                <p>Relojes Ferrari</p><br>
-                <p>Zapatos Ferrari</p><br>
-                <p>Scuderia Ferrari Replica</p><br>
-                <p>Gafas de sol Ray-Ban</p><br>
-                <p>Recuerdos Ferrari</p><br>
-                <p>Puntos de venta</p><br>
+                <p>COLECCIONES</p>
+                <p>Hombre</p>
+                <p>Mujer</p>
+                <p>Niño</p>
+                <p>Relojes Ferrari</p>
+                <p>Zapatos Ferrari</p>
+                <p>Scuderia Ferrari Replica</p>
+                <p>Gafas de sol Ray-Ban</p>
+                <p>Recuerdos Ferrari</p>
+                <p>Puntos de venta</p>
                 
                 
                 
                 
               </div>
               <div class="clase-4">
-                <p>RACES</p><br>
-                <p>Competizioni GT</p><br>
-                <p>Corse Clienti</p><br>
-                <p>Ferrari Challenge</p><br>
-                <p>XX Programme</p><br>
-                <p>F1 Clienti</p><br>
-                <p>Club Competizioni GT</p><br>
-                <p></p><br>
-                <p></p><br>
-                <p></p><br>
-                <p></p><br>
-                <p></p><br>
-                <p></p><br>
-                <p></p><br>
+                <p>RACES</p>
+                <p>Competizioni GT</p>
+                <p>Corse Clienti</p>
+                <p>Ferrari Challenge</p>
+                <p>XX Programme</p>
+                <p>F1 Clienti</p>
+                <p>Club Competizioni GT</p>
+               
                 
               </div>
               <div class="clase-5">
-                <p>UNIVERSE</p><br>
+                <p>UNIVERSE</p>
                 <p>News</p>
-                <p>The Official Ferrari Magazine</p><br>
-                <p>Ferrari Museums</p><br>
-                <p>Ristorante Cavallino</p><br>
-                <p>History</p><br>
-                <p>Ferrari Simulation Center</p><br>
-                <p>Ferrari World Abu Dhabi</p><br>
-                <p>Ferrari Land Barcelona</p><br>
-                <p></p><br>
-                <p></p><br>
+                <p>The Official Ferrari Magazine</p>
+                <p>Ferrari Museums</p>
+                <p>Ristorante Cavallino</p>
+                <p>History</p>
+                <p>Ferrari Simulation Center</p>
+                <p>Ferrari World Abu Dhabi</p>
+                <p>Ferrari Land Barcelona</p>
+                
               </div>
           </div>
           <div class="footer-div">
@@ -249,20 +248,25 @@
                   <h2></h2>
                   <ul class="social-icons">
                       <li>
-                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="https://twitter.com/Ferrari"><i class="fab fa-twitter"></i></a>
                       </li>
                       <li>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
+                          <a href="https://web.facebook.com/Ferrari?_rdc=1&_rdr"><i class="fab fa-facebook-square"></i></a>
                       </li>
                       <li>
-                          <a href="#"><i class="fab fa-pinterest"></i></a>
+                          <a href="https://www.instagram.com/ferrari/"><i class="fab fa-instagram"></i></a>
                       </li>
                       <li>
-                          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://www.linkedin.com/company/ferrari"><i class="fab fa-linkedin-in"></i></a>
                       </li>
+                     
+
                       <li>
-                          <a href="#"><i class="fab fa-tripadvisor"></i></a>
-                      </li>
+                        <a href="https://www.youtube.com/user/ferrariworld"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitch.tv/ferrariesports"><i class="fab fa-twitch"></i></a>
+                  </li>
                   </ul>
               </div>
               <h2></h2>

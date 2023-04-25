@@ -1,24 +1,21 @@
-// /!\ Optional JS for Autoplay /!\
+const slider = document.querySelector('.slider');
+const images = document.querySelectorAll('.slider img');
 
-// AUTOPLAY SLIDER CSS
-var nbSlide = $(".slides").length;
-var i = 1;
-function sliderAutoplay(){
-  if(i == nbSlide+1) {
-    i = 1;
-    $("#button-"+i).prop("checked", true).trigger("click");
-  } else {
-    $("#button-"+i).prop("checked", true).trigger("click");
-  }
-  i++;
-  // durée d'une slide
-  timeout = setTimeout(sliderAutoplay,3000); 
+let current = 0;
+
+function reset() {
+	for (let i = 0; i < images.length; i++) {
+		images[i].classList.remove('active');
+	}
 }
-sliderAutoplay();
 
-// AUTOPLAY STOP QUAND ON CHANGE MANUELLEMENT DE SLIDE
-$('#slideshow-wrap input').click(function(){
-  var id = $(this).attr("id");
-  clearTimeout(timeout);
-  //console.log(id.substr(-1));
-});
+function startSlide() {
+	reset();
+	images[current].classList.add('active');
+	current++;
+	if (current === images.length) {
+		current = 0;
+	}
+}
+
+let slideInterval = setInterval(startSlide, 2000);
