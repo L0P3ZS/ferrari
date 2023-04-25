@@ -306,18 +306,19 @@ footer {
   margin-bottom: 5.4rem;
   display: flex;
   justify-content: center;
+  
 }
 
 .social-icons i {
   font-size: 2rem;
-  color: #3bcc75;
+  color: #eaf1ed;
   padding: 0px 2rem;
   
 }
 
 .social-icons i:hover,
 .social-icons i:focus {
-  color: #ffc845;
+  color: red;
 }
 
 .news-form {
@@ -382,13 +383,14 @@ footer {
   position: absolute;
   top: 86%;
   width: 100%;
-  
+  align-items: center;
 }
 
 .contenedor h1 {
   display: inline-block;
-  margin: 10px;
+  margin: 40px 12px;
   font-size: 12px;
+ 
   
 }
 
@@ -427,6 +429,10 @@ h2 {
 
     .nav {
         justify-content: space-between;
+    }
+
+    .tdd{
+      width: 50px;
     }
 
     .nav-list {
@@ -523,3 +529,5 @@ display: block;
   width: 100px;
   height: 100px;
 }
+
+
