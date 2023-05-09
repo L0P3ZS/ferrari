@@ -18,4 +18,11 @@ function startSlide() {
 	}
 }
 
-let slideInterval = setInterval(startSlide, 2000);
+let slideInterval = setInterval(startSlide, 987);
+
+const boton = document.getElementById("boton");
+
+boton.addEventListener("click", function() {
+  boton.style.border = "2px solid blue";
+  boton.style.backgroundColor = "transparent";
+});

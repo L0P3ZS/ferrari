@@ -31,7 +31,17 @@ header {
   align-items: center;
   justify-content: center;
 }
+.ico{
+  position: relative;
+  left: 50%;
+  top: 20px;
+}
 
+.ico img{
+  width: 100px;
+  height: 100px;
+  
+}
 .menu-toggle {
   color: #fff;
   font-size: 2.2rem;
@@ -96,11 +106,11 @@ header {
   transform: scale(1);
 }
 
-.logo {
+/* .logo {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
-}
+} */
 
 /* .nav-item {
   border-bottom: 2px solid rgba(255, 255, 255, .3);
@@ -203,6 +213,10 @@ header {
   .box h1{
     font-size: 29px;
   }
+
+  .box button{
+    color: #252525;
+  }
   /* contenedor de images */
   .image-container {
     display: flex;
@@ -266,6 +280,42 @@ header {
     text-align: center;
     left: -20%;
   }
+
+
+/* boton */
+.contt{
+  background: #494848;
+  height: 70px;
+  text-align: center;
+  
+}
+
+.redondo{
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: #ffffff;
+  transition: calc(0.3s);
+  font-size: 30px;
+  color: #fff;
+  margin: 10px;
+}
+.redondo:hover{
+  border-color: red;
+  color: red;
+  
+}
+.contt p{
+  font-size: 17px;
+  
+
+}
+
+
+
+
+
 
   /* pie de pagina */
 footer {
@@ -394,7 +444,7 @@ h2 {
   align-items: center;
 }
  
-  @media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
 
     section {
         padding: 7.9rem;
@@ -437,22 +487,9 @@ h2 {
         font-size: 1.3rem;
     }
 
-   
-    
+  
 }
 
-.fa-tiktok{
-  list-style: none;
-  margin-bottom: 5.4rem;
-  display: flex;
-  justify-content: center;
-}
-
-.fa-tiktok{
-  font-size: 2rem;
-  color: #eaf1ed;
-  padding: 0px 2rem;
-}
 
 
 .footer {
@@ -460,6 +497,7 @@ h2 {
   color: #fff;
  
 }
+
 #logo {
 position: fixed;
 top: 0;
@@ -521,26 +559,69 @@ display: block;
 }
 
 /* modal */
+#modal::backdrop{
+  background-color: rgba(12, 12, 12, 0.55);
+}
 
 #modal{
-  width: 50%;
+  width: 70%;
   margin: 0 auto 0;
-  padding: 7em 8vw;
+  padding: 5em 6vw;
   background: white;
-  margin-left: 50%;
-  
+  margin-left: 40%;
   height: 100%;
 }
 
- #modal button{
-  background-color: black;
-  padding: 5px 15px;
-  border-radius: 5px;
-  color: white;
-  position: relative;
-  left: 50%;
+
+h1{
+  font-size: 30px;
 }
-h4{
-  position: relative;
-  top: 60px;
+#modal .modall{
+  max-width: 90%;
+}
+#modal label{
+  font-size: 20px;
+  margin: 17px 0 17px;
+  display: flex;
+}
+#modal input[type="text"]{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #070707;
+  outline: none;
+  height: 40px;
+  color: rgb(19, 18, 18);
+  font-size: 16px;
+  width: 100%;
+  margin: 17px 0 17px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr;
+  font-size: 14px;
+}
+
+.left-column {
+  grid-column: 1 / 2;
+  
+}
+
+.right-column {
+  grid-column: 3 / 4;
+
+}
+
+#modal p{
+  font-size: 20px;
+  margin: 17px 0 17px;
+}
+
+#modal button{
+  height: 70px;
+  width: 30%;
+  background: transparent;
+  margin: 17px 0 17px;
+
 }
